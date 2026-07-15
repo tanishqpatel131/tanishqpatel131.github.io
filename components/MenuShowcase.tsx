@@ -2,14 +2,29 @@
 
 import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { Flame, Leaf, Star } from "lucide-react";
+import { Flame, Leaf, Star, Check } from "lucide-react";
 import { menuItems, categories } from "@/lib/menu-data";
+import { useCart } from "@/lib/cart";
 
 type Filter = "all" | "veg" | "chef";
 
 export function MenuShowcase({ limit }: { limit?: number }) {
   const [active, setActive] = useState("all");
   const [filter, setFilter] = useState<Filter>("all");
+  const [added, setAdded] = useState<string | null>(null);
+  const add = useCart((s) => s.add);
+
+  const handleAdd = (item: (typeof menuItems)[number]) => {
+    add({
+      id: item.id,
+      name: item.name,
+      price: item.price,
+      category: item.category,
+      veg: item.veg,
+    });
+    setAdded(item.id);
+    setTimeout(() => setAdded((cur) => (cur === item.id ? null : cur)), 1200);
+  };
 
   const activeCat = categories.find((c) => c.id === active);
 
@@ -118,8 +133,21 @@ export function MenuShowcase({ limit }: { limit?: number }) {
               <span className="font-display text-2xl font-semibold text-gold">
                 ₹{item.price.toFixed(2)}
               </span>
-              <button className="rounded-full border border-gold/40 px-4 py-1.5 text-sm font-semibold text-cream transition-colors hover:bg-gold hover:text-ink">
-                Add
+              <button
+                onClick={() => handleAdd(item)}
+                className={`flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm font-semibold transition-colors ${
+                  added === item.id
+                    ? "border-emerald-400 bg-emerald-400/15 text-emerald-300"
+                    : "border-gold/40 text-cream hover:bg-gold hover:text-ink"
+                }`}
+              >
+                {added === item.id ? (
+                  <>
+                    <Check size={15} /> Added
+                  </>
+                ) : (
+                  "Add"
+                )}
               </button>
             </div>
           </motion.article>
