@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ember: #e0561f;
+  --color-ember-light: #ff7a3d;
+  --color-gold: #c9a24b;
+  --color-gold-light: #e3c578;
+  --color-cream: #f6efe3;
+  --color-ink: #0c0a09;
+  --color-ink-soft: #16130f;
+  --color-char: #1e1a15;
+  --font-display: var(--font-display), Georgia, serif;
+}
+
+:root {
+  --background: #0c0a09;
+  --foreground: #f6efe3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Thin custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0a09;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#c9a24b, #e0561f);
+  border-radius: 999px;
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+.animate-floaty {
+  animation: floaty 6s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer-text {
+  background: linear-gradient(90deg, #c9a24b, #f6efe3, #c9a24b);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+
+.glass {
+  background: rgba(246, 239, 227, 0.04);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(201, 162, 75, 0.18);
+}
+
+.gradient-ember {
+  background: radial-gradient(circle at 30% 20%, rgba(224, 86, 31, 0.25), transparent 55%),
+    radial-gradient(circle at 80% 80%, rgba(201, 162, 75, 0.22), transparent 55%);
+}
+
+.noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
