@@ -3,8 +3,8 @@ import { ReservationForm } from "@/components/ReservationForm";
 import { Clock, MapPin, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Reserve — Ember & Spice",
-  description: "Book a table at Ember & Spice. Private dining, events and walk-ins welcome.",
+  title: "Reserve — Patel's Kitchen",
+  description: "Book a table at Patel's Kitchen. Private dining, events and walk-ins welcome.",
 };
 
 export default function ReservePage() {
@@ -24,8 +24,8 @@ export default function ReservePage() {
           <aside className="space-y-5">
             {[
               { icon: Clock, title: "Opening hours", text: "Mon–Sun · 11:00 – 00:00" },
-              { icon: MapPin, title: "Find us", text: "42 Flame Avenue, Metropolis" },
-              { icon: Phone, title: "Call ahead", text: "+1 (555) 012-3456" },
+              { icon: MapPin, title: "Find us", text: "near sardardham hostel, sardar patel ring road, ahmedabad" },
+              { icon: Phone, title: "Call ahead", text: "+91 9924305858" },
             ].map((c) => (
               <div key={c.title} className="glass flex items-start gap-4 rounded-2xl p-5">
                 <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gold/15 text-gold">
@@ -41,7 +41,7 @@ export default function ReservePage() {
             ))}
             <p className="px-2 text-sm text-cream/50">
               For parties of 9+ or private events, email{" "}
-              <span className="text-gold">events@emberspice.com</span>.
+              <span className="text-gold">tanishqpatel131@gmail.com</span>.
             </p>
           </aside>
 

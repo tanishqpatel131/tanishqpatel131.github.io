@@ -16,7 +16,7 @@ const display = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Ember & Spice — Global Kitchen",
+  title: "Patel's Kitchen — Global Kitchen",
   description:
     "A premium global kitchen serving wood-fired pizza, char-grilled burgers, hand-rolled pasta, Mexican, Indian street food and seasonal specials. Order online or book a table.",
   keywords: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "order online",
   ],
   openGraph: {
-    title: "Ember & Spice — Global Kitchen",
+    title: "Patel's Kitchen — Global Kitchen",
     description:
       "Wood-fired, char-grilled, hand-rolled. A premium global kitchen.",
     type: "website",

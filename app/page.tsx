@@ -30,7 +30,7 @@ export default function Home() {
       <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="mb-14 text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold">
-            Why Ember & Spice
+            Why Patel's Kitchen
           </p>
           <h2 className="mt-3 font-display text-4xl font-semibold text-cream sm:text-5xl">
             A kitchen built on <span className="text-gold">craft</span>

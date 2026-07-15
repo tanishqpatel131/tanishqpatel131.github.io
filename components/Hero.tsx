@@ -36,7 +36,7 @@ export function Hero() {
           transition={{ duration: 0.6 }}
           className="mb-5 text-sm font-semibold uppercase tracking-[0.4em] text-gold"
         >
-          Global Kitchen · Est. 2025
+          Patel's Kitchen · Est. 2025
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -44,7 +44,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="font-display text-6xl font-semibold leading-[0.95] text-cream sm:text-7xl lg:text-8xl"
         >
-          Fire. Spice.
+          Fire. Kitchen.
           <br />
           <span className="shimmer-text">Soul.</span>
         </motion.h1>

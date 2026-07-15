@@ -8,7 +8,7 @@ const reviews = [
   {
     name: "Ava Mitchell",
     role: "Regular since 2021",
-    text: "The truffle Margherita is the best pizza I've had outside Naples. Ember & Spice nails the balance of fire and finesse every single time.",
+    text: "The truffle Margherita is the best pizza I've had outside Naples. Patel's Kitchen nails the balance of fire and finesse every single time.",
   },
   {
     name: "Rohan Kapoor",

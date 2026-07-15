@@ -40,7 +40,7 @@ export function SiteFooter() {
           <div className="flex items-center gap-2">
             <span className="text-2xl">🔥</span>
             <span className="font-display text-2xl font-semibold text-cream">
-              Ember<span className="text-gold">Spice</span>
+              Patel's<span className="text-gold">&nbsp;Kitchen</span>
             </span>
           </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-cream/60">
@@ -85,16 +85,16 @@ export function SiteFooter() {
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-6 text-sm text-cream/50 sm:flex-row sm:items-center sm:justify-between lg:px-8">
           <div className="flex flex-wrap gap-x-6 gap-y-2">
             <span className="flex items-center gap-2">
-              <MapPin size={15} className="text-gold" /> 42 Flame Avenue, Metropolis
+              <MapPin size={15} className="text-gold" /> near sardardham hostel, sardar patel ring road, ahmedabad
             </span>
             <span className="flex items-center gap-2">
-              <Phone size={15} className="text-gold" /> +1 (555) 012-3456
+              <Phone size={15} className="text-gold" /> +91 9924305858
             </span>
             <span className="flex items-center gap-2">
-              <Mail size={15} className="text-gold" /> hello@emberspice.com
+              <Mail size={15} className="text-gold" /> tanishqpatel131@gmail.com
             </span>
           </div>
-          <p>© {new Date().getFullYear()} Ember & Spice. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Patel's Kitchen. All rights reserved.</p>
         </div>
       </div>
     </footer>

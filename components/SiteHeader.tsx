@@ -46,7 +46,7 @@ export function SiteHeader() {
           <Link href="/" className="group flex items-center gap-2">
             <span className="text-2xl">🔥</span>
             <span className="font-display text-2xl font-semibold tracking-wide text-cream">
-              Ember<span className="text-gold">&nbsp;Spice</span>
+              Patel's<span className="text-gold">&nbsp;Kitchen</span>
             </span>
           </Link>
 

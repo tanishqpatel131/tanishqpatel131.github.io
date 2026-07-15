@@ -89,7 +89,7 @@ export function ReservationForm() {
           value={form.phone}
           onChange={update("phone")}
           className="w-full rounded-xl border border-gold/20 bg-black/30 px-4 py-3 text-cream outline-none transition-colors focus:border-gold"
-          placeholder="+1 555 012 3456"
+          placeholder="+91 9924305858"
         />
       </div>
       <div className="sm:col-span-1">

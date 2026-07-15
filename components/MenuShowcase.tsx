@@ -116,7 +116,7 @@ export function MenuShowcase({ limit }: { limit?: number }) {
             </p>
             <div className="mt-4 flex items-center justify-between">
               <span className="font-display text-2xl font-semibold text-gold">
-                ${item.price.toFixed(2)}
+                ₹{item.price.toFixed(2)}
               </span>
               <button className="rounded-full border border-gold/40 px-4 py-1.5 text-sm font-semibold text-cream transition-colors hover:bg-gold hover:text-ink">
                 Add

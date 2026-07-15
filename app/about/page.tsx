@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Flame, Globe2, Heart } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Our Story — Ember & Spice",
+  title: "Our Story — Patel's Kitchen",
   description:
     "How a single wood-fired oven grew into a premium global kitchen serving the world on one menu.",
 };
@@ -12,7 +12,7 @@ const milestones = [
   { year: "2010", text: "A single wood-fired oven and a stubborn belief in good food." },
   { year: "2015", text: "Our Mexican and Indian kitchens opened — the global menu was born." },
   { year: "2020", text: "Launched online ordering and contactless delivery." },
-  { year: "2025", text: "Ember & Spice goes fully premium, 18 cuisines on one table." },
+  { year: "2025", text: "Patel's Kitchen goes fully premium, 18 cuisines on one table." },
 ];
 
 export default function AboutPage() {

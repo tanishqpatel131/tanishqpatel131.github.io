@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { MenuShowcase } from "@/components/MenuShowcase";
 
 export const metadata: Metadata = {
-  title: "Menu — Ember & Spice",
+  title: "Menu — Patel's Kitchen",
   description:
     "Explore our full menu: pizza, burgers, pasta, wraps, Mexican, Indian street food, desserts, drinks and seasonal specials.",
 };
